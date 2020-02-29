@@ -1,0 +1,24 @@
+.header {
+  width: 1130px;
+  height: 98px;
+  margin: 0 auto;
+}
+.header a {
+  display: block;
+  width: 200px;
+  height: 98px;
+  background: url(../images/mistore_logo.png) no-repeat;
+}
+
+.banner {
+  height: 588px;
+  background: url(../images/login_bg.jpg) no-repeat;
+  background-position-x: center;
+  background-size: cover;
+}
+.banner .login {
+  width: 410px;
+  background: #fff;
+}
+
+/*# sourceMappingURL=login.css.map */
