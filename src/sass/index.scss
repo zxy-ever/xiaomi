@@ -1,0 +1,204 @@
+.header_wrap {
+    height: 40px;
+    background: #333;
+}
+
+.header {
+    width: 1226px;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 12px;
+
+    .header_l {
+        li {
+            display: inline-block;
+
+            a {
+                color: #b0b0b0;
+            }
+        }
+
+        span {
+            display: inline-block;
+            color: #424242;
+            padding: 0 4px;
+        }
+    }
+
+    .header_r {
+        li {
+            display: inline-block;
+            padding: 0 5px;
+
+            a {
+                color: #b0b0b0;
+            }
+
+            ;
+
+            &:nth-child(3) {
+                padding: 0 10px;
+            }
+
+            &::nth-child(4) {
+                margin-left: 15px;
+            }
+        }
+
+        span {
+            display: inline-block;
+            color: #424242;
+        }
+
+        // 购物车按钮
+        .cart {
+            // margin-left: 15px;
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            background: #424242;
+
+            .cart_logo {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+                background: url(../images/cart.png);
+                background-size: contain;
+            }
+        }
+
+        // 购物车按钮悬浮//购物车有数据
+        .cart_hover {
+            display: block;
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            color: #fff;
+            background: #ff6700;
+        }
+    }
+}
+
+// nav
+.nav {
+    width: 1226px;
+    height: 100px;
+    margin: 0 auto;
+
+    // logo
+    .logo {
+        width: 55px;
+        height: 55px;
+        background: #ff6700;
+        margin-top: 22px;
+
+        .mi-logo {
+            display: block;
+            width: 49px;
+            height: 49px;
+            margin: 3px auto;
+            background: url(../images/mi-logo.png);
+        }
+    }
+
+    // ul列表
+    ul {
+        width: 870px;
+        height: 100px;
+
+        li {
+            display: inline-block;
+            line-height: 100px;
+            height: 100px;
+
+            &:nth-of-type(1) {
+                margin-left: 25px;
+                width: 127px;
+                padding: 0;
+                padding-right: 15px;
+            }
+
+            a {
+                padding: 26px 10px 38px;
+                font-size: 16px;
+
+                &:hover {
+                    color: #ff6700;
+                }
+            }
+        }
+    }
+
+    .search {
+        width: 296px;
+        margin-top: 25px;
+        position: relative;
+
+        .txt {
+            width: 223px;
+            height: 48px;
+            border: solid 1px #e0e0e0;
+            padding: 0 10px;
+        }
+
+        .search_btn {
+            width: 50px;
+            height: 50px;
+            border: solid 1px #e0e0e0;
+            border-left: 0;
+            // padding: 0 6px;
+            background: none;
+            &:hover{
+                background: #ff6700;
+            }
+        }
+
+        .keyword {
+            position: absolute;
+            top: 14px;
+            left: 62px;
+
+            a {
+                padding: 0 5px;
+                font-size: 12px;
+                background: #eee;
+                color: #757575;
+                &:hover{
+                    background: #ff6700;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+// banner
+.banner{
+    width: 1226px;
+    height: 460px;
+    background: rgba(255,0,0,0.3);
+    margin: 0 auto;
+    .list{
+        // background: ;
+        width: 234px;
+        height: 420px;
+        padding: 20px 0;
+        ul{
+            li{
+                height: 42px;
+                line-height: 42px;
+                a{
+                    display: block;
+                    font-size: 14px;
+                    color:#fff;
+                    padding-left: 30px;
+                }
+                &:hover{
+                    background: #ff6700;
+                }
+            }
+        }
+    }
+}

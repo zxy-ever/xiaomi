@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/until.css">
     <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/login.css">
 </head>
@@ -16,12 +17,53 @@
         <!-- banner -->
         <div class="banner">
             <div class="login">
-                <div>
-                    <h2>账号登录</h2>|
-                    <h2>扫码登录</h2>
+                <div class="text">
+                    <a class="num" href="javascript:;">账号登录</a>
+                    <a class="code" href="javascript:;">扫码登录</a>
+                </div>
+                <div class="ipt">
+                    <input type="text" class="username" placeholder="邮箱/手机号码/小米ID">
+                    <input type="password" class="password" placeholder="密码">
+                    <input type="button" class="btn" value="登录">
+                </div>
+                <div class="reg">
+                    <a href="javascript:;">手机号短信登录/注册</a>
+                    <a href="./reg.html">立即注册</a>
+                    <span>|</span>
+                    <a href="">忘记密码?</a>
+                </div>
+                <div class="other">
+                    <span>—————————其他登录方式—————————</span>
+                    <a href="" class="icon_qq">
+                        <i></i>
+                    </a>
+                    <a href="" class="icon_weibo">
+                        <i></i>
+                    </a>
+                    <a href="" class="icon_zhi">
+                        <i></i>
+                    </a>
+                    <a href="" class="icon_we">
+                        <i></i>
+                    </a>
                 </div>
             </div>
         </div>
-    
+        <!-- footer -->
+        <div class="footer">
+            <ul>
+                <li><a href="javascript:;">简体</a></li><span>|</span>
+                <li><a href="javascript:;">繁体</a></li><span>|</span>
+                <li><a href="javascript:;">English</a></li><span>|</span>
+                <li><a href="javascript:;">常见问题</a></li><span>|</span>
+                <li><a href="javascript:;">隐私政策</a></li>
+            </ul>
+            <p>小米公司版权所有-京ICP备10046444-
+                <img src="../images/ghs.png" alt="">
+                京公网安备11010802020134号-京ICP证110507号</p>
+        </div>
+
+        <script src="../lib/jquery/dist/jquery.min.js"></script>
+        <script src="../js/login.js"></script>
 </body>
 </html>

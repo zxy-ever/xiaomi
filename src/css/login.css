@@ -15,10 +15,165 @@
   background: url(../images/login_bg.jpg) no-repeat;
   background-position-x: center;
   background-size: cover;
+  position: relative;
 }
 .banner .login {
   width: 410px;
   background: #fff;
+  position: absolute;
+  top: 35px;
+  right: 110px;
+}
+.banner .login .text {
+  height: 78px;
+}
+.banner .login .text a {
+  font-size: 24px;
+  color: #f56600;
+  margin-left: 60px;
+  position: relative;
+  line-height: 78px;
+}
+.banner .login .text a:hover {
+  color: #f56600;
+  text-decoration: none;
+}
+.banner .login .text .num::after {
+  content: "";
+  display: block;
+  background: #666;
+  width: 1px;
+  height: 28px;
+  position: absolute;
+  left: 125px;
+  top: 0;
+}
+.banner .login .text .code {
+  color: #666;
+  margin-left: 60px;
+}
+.banner .login .ipt {
+  padding: 0 30px;
+}
+.banner .login .ipt input {
+  width: 348px;
+  height: 48px;
+  border: solid 1px #e0e0e0;
+  padding: 13px 16px 13px 14px;
+  margin-top: 13px;
+}
+.banner .login .ipt .btn {
+  background: #ff6700;
+  color: #fff;
+  border: 0;
+  margin-top: 25px;
+}
+.banner .login .reg {
+  padding: 10px 30px 130px;
+}
+.banner .login .reg a {
+  font-size: 14px;
+  color: #999999;
+}
+.banner .login .reg a:nth-child(1) {
+  color: #ff6700;
+  margin-right: 80px;
+}
+.banner .login .reg a:hover {
+  text-decoration: none;
+  color: #ff6700;
+}
+.banner .login .other {
+  padding: 0 30px 52px;
+}
+.banner .login .other span {
+  display: block;
+  margin-bottom: 13px;
+  color: #bbb;
+}
+.banner .login .other a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 17px;
+}
+.banner .login .other a i {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: 4px auto 0;
+}
+.banner .login .other .icon_qq {
+  background: #0288d1;
+  margin-left: 50px;
+}
+.banner .login .other .icon_qq i {
+  background: url("../images/icons_type.png");
+  background-position: -19px 0;
+}
+.banner .login .other .icon_weibo {
+  background: #d32f2f;
+}
+.banner .login .other .icon_weibo i {
+  background: url("../images/icons_type.png");
+  background-position: -38px 0;
+}
+.banner .login .other .icon_zhi {
+  background: #0ae;
+}
+.banner .login .other .icon_zhi i {
+  margin-top: 6px;
+  margin-left: 4px;
+  width: 25px;
+  background: url("../images/icons_type.png");
+  background-position: -57px 0;
+}
+.banner .login .other .icon_we {
+  background: #00d20d;
+}
+.banner .login .other .icon_we i {
+  margin-top: 6px;
+  margin-left: 4px;
+  width: 24px;
+  background: url("../images/icons_type.png");
+  background-position: -83px 0;
+}
+
+.footer {
+  width: 1349px;
+  height: 80px;
+  padding-top: 100px;
+}
+.footer ul {
+  padding: 0 500px;
+}
+.footer ul span {
+  color: #757575;
+}
+.footer ul li {
+  display: inline-block;
+  font-size: 14px;
+}
+.footer ul li a {
+  display: block;
+  color: #757575;
+  padding: 0 10px;
+}
+.footer ul li a:hover {
+  color: #333;
+  text-decoration: none;
+}
+.footer ul li:nth-child(1) a {
+  color: #333333;
+}
+.footer p {
+  text-align: center;
+  color: #757575;
+  padding-bottom: 20px;
+}
+.footer p img {
+  display: inline;
 }
 
 /*# sourceMappingURL=login.css.map */

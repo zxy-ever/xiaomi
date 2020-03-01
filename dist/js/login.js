@@ -1,1 +1,1 @@
-"use strict";
+"use strict";$(".btn").click(function(){console.log(111);var o=$(".username").val(),a=$(".password").val();console.log(o,a),$.ajax({url:"http://jx.xuzhixiang.top/ap/api/login.php",type:"get",data:{username:o,password:a}}).then(function(o){console.log(o),1===o.code&&(location.href="./index.html")})});

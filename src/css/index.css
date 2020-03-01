@@ -1,0 +1,167 @@
+.header_wrap {
+  height: 40px;
+  background: #333;
+}
+
+.header {
+  width: 1226px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  font-size: 12px;
+}
+.header .header_l li {
+  display: inline-block;
+}
+.header .header_l li a {
+  color: #b0b0b0;
+}
+.header .header_l span {
+  display: inline-block;
+  color: #424242;
+  padding: 0 4px;
+}
+.header .header_r li {
+  display: inline-block;
+  padding: 0 5px;
+}
+.header .header_r li a {
+  color: #b0b0b0;
+}
+.header .header_r li:nth-child(3) {
+  padding: 0 10px;
+}
+.header .header_r li::nth-child(4) {
+  margin-left: 15px;
+}
+.header .header_r span {
+  display: inline-block;
+  color: #424242;
+}
+.header .header_r .cart {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  background: #424242;
+}
+.header .header_r .cart .cart_logo {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background: url(../images/cart.png);
+  background-size: contain;
+}
+.header .header_r .cart_hover {
+  display: block;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  background: #ff6700;
+}
+
+.nav {
+  width: 1226px;
+  height: 100px;
+  margin: 0 auto;
+}
+.nav .logo {
+  width: 55px;
+  height: 55px;
+  background: #ff6700;
+  margin-top: 22px;
+}
+.nav .logo .mi-logo {
+  display: block;
+  width: 49px;
+  height: 49px;
+  margin: 3px auto;
+  background: url(../images/mi-logo.png);
+}
+.nav ul {
+  width: 870px;
+  height: 100px;
+}
+.nav ul li {
+  display: inline-block;
+  line-height: 100px;
+  height: 100px;
+}
+.nav ul li:nth-of-type(1) {
+  margin-left: 25px;
+  width: 127px;
+  padding: 0;
+  padding-right: 15px;
+}
+.nav ul li a {
+  padding: 26px 10px 38px;
+  font-size: 16px;
+}
+.nav ul li a:hover {
+  color: #ff6700;
+}
+.nav .search {
+  width: 296px;
+  margin-top: 25px;
+  position: relative;
+}
+.nav .search .txt {
+  width: 223px;
+  height: 48px;
+  border: solid 1px #e0e0e0;
+  padding: 0 10px;
+}
+.nav .search .search_btn {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #e0e0e0;
+  border-left: 0;
+  background: none;
+}
+.nav .search .search_btn:hover {
+  background: #ff6700;
+}
+.nav .search .keyword {
+  position: absolute;
+  top: 14px;
+  left: 62px;
+}
+.nav .search .keyword a {
+  padding: 0 5px;
+  font-size: 12px;
+  background: #eee;
+  color: #757575;
+}
+.nav .search .keyword a:hover {
+  background: #ff6700;
+  color: #fff;
+}
+
+.banner {
+  width: 1226px;
+  height: 460px;
+  background: rgba(255, 0, 0, 0.3);
+  margin: 0 auto;
+}
+.banner .list {
+  width: 234px;
+  height: 420px;
+  padding: 20px 0;
+}
+.banner .list ul li {
+  height: 42px;
+  line-height: 42px;
+}
+.banner .list ul li a {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  padding-left: 30px;
+}
+.banner .list ul li:hover {
+  background: #ff6700;
+}
+
+/*# sourceMappingURL=index.css.map */
