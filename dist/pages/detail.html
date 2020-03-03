@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Document</title><link rel=stylesheet href=../css/until.css><link rel=stylesheet href=../css/detail.css></head><body><div class="detail container clean"><div class="small fl"><img src=https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581493807.88134635.jpg alt=""></div><div class="info fl"><h2>小米10</h2><p>骁龙865处理器</p><p class=txt>小米自营</p><p class=price><span>5999</span>元</p><button id=addCart data-id="">加入购物车</button></div></div><script src=../lib/jquery/dist/jquery.min.js></script><script>$.ajax({
+            url: '../lib/seckill.json',
+            dataType: 'json',
+            success: function (res) {
+                console.log(res)
+                let searchParam = new URLSearchParams(location.search.slice(1))
+                let pid = searchParam.get('id')
+                console.log(pid)
+                let resArr = Array.from(res)
+                console.log(resArr)
+                let json = resArr.filter(v=>v.goods_id===pid)
+                console.log(json[0].goods_name)
+                let str = ''
+                json.forEach(function(item){
+                    console.log(item)
+                    str += `
+                    <div class="small fl">
+                        <img src="${item.pc_img}" alt="">
+                    </div>
+                    <div class="info fl">
+                        <h2>${item.goods_name}</h2>
+                        <p>${item.desc}</p>
+                        <p class="txt">小米自营</p>
+                        <p class="price"><span>${item.goods_price}</span>元</p>
+                        <button id="addCart" data-id="${item.goods_id}">加入购物车</button>
+                    </div>
+                    `
+                })
+                $('.detail').html(str)
+
+                // 加入购物车
+                $('#addCart').click(function(){
+                    let obj = json[0]
+                    console.log(obj)
+                    let jsonstr = localStorage.getItem('cart')
+                    if(jsonstr){
+                        let jsonstr = localStorage.getItem('cart')
+                        let arr = JSON.parse(jsonstr)
+                        // 判断购物车中有没有要存入的商品
+                        let pObj = arr.find(v=>v.goods_id == obj.goods_id)
+                        // 有
+                        if(pObj){
+                            pObj.pnum++
+                        }else{
+                            // 没有
+                            obj.pnum = 1;
+                            arr.push(obj)
+                        }
+                        localStorage.setItem('cart',JSON.stringify(arr))
+                    }else{
+                        // 没有数据
+                        obj.pnum = 1;
+                        let tmpArr = [obj]
+                        localStorage.setItem('cart',JSON.stringify(tmpArr))
+                    }
+
+                })
+            }
+        })</script></body></html>

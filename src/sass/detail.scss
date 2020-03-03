@@ -1,0 +1,53 @@
+.container {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.detail {
+    background: firebrick;
+    padding: 32px 0;
+
+    >.small {
+        background: firebrick;
+
+        >img {
+            width: 560px;
+            height: 560px;
+        }
+    }
+
+    .info {
+        width: 666px;
+        text-align: center;
+        padding: 50px 0;
+        >h2 {
+            font-size: 24px;
+            color: #212121;
+        }
+
+        p {
+            font-size: 14px;
+            color: #b0b0b0;
+
+        }
+        .txt{
+            font-size: 14px;
+            color: #ff6700;
+            margin-top: 20px;
+        }
+        .price {
+            font-size: 18px;
+            color: #ff6700;
+            padding: 20px 0;
+        }
+        #addCart{
+            width: 300px;
+            height: 54px;
+            border: solid 1px #ff6700;
+            color: #fff;
+            font-size: 16px;
+            background: #ff6700;
+            margin-top: 30px;
+        }
+    }
+}
