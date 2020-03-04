@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="../css/until.css">
+  <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
   <!-- <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css"> -->
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1671723_ktveztnu4l.css">
   <link rel="stylesheet" href="../css/index.css">
 </head>
 
@@ -75,60 +76,6 @@
     <!--.nav_box -->
     <div class="nav_box">
       <ul>
-        <li>
-          <div>
-            <img
-              src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d712f71b3c4a3b562601c2b956a660ad.png?thumb=1&w=160&h=110"
-              alt="">
-          </div>
-          <p>小米10</p>
-          <p>4999</p>
-        </li>
-        <li>
-          <div>
-            <img
-              src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d712f71b3c4a3b562601c2b956a660ad.png?thumb=1&w=160&h=110"
-              alt="">
-          </div>
-          <p>小米10</p>
-          <p>4999</p>
-        </li>
-        <li>
-          <div>
-            <img
-              src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d712f71b3c4a3b562601c2b956a660ad.png?thumb=1&w=160&h=110"
-              alt="">
-          </div>
-          <p>小米10</p>
-          <p>4999</p>
-        </li>
-        <li>
-          <div>
-            <img
-              src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d712f71b3c4a3b562601c2b956a660ad.png?thumb=1&w=160&h=110"
-              alt="">
-          </div>
-          <p>小米10</p>
-          <p>4999</p>
-        </li>
-        <li>
-          <div>
-            <img
-              src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d712f71b3c4a3b562601c2b956a660ad.png?thumb=1&w=160&h=110"
-              alt="">
-          </div>
-          <p>小米10</p>
-          <p>4999</p>
-        </li>
-        <li>
-          <div>
-            <img
-              src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d712f71b3c4a3b562601c2b956a660ad.png?thumb=1&w=160&h=110"
-              alt="">
-          </div>
-          <p>小米10</p>
-          <p>4999</p>
-        </li>
       </ul>
     </div>
   </div>
@@ -177,7 +124,7 @@
     <!-- banner 列表 -->
     <div class="list">
       <ul>
-        <li><a href="javascript:;"><span>手机 电话卡</span></a></li>
+        <li><a href="javascript:;"><span>手机 电话卡</span><span class="iconfont icon-iconfonti"></span></a></li>
         <li><a href="javascript:;"><span></span>电视 盒子</span></a></li>
         <li><a href="javascript:;"><span></span>笔记本 显示器 平板</span></a></li>
         <li><a href="javascript:;"><span></span>家电 插线板</span></a></li>
@@ -573,13 +520,102 @@
 
 
   <script>
-    $.ajax({
-      url:'../lib/seckill.json',
-      dataType:'json',
-      success:function(res){
-        console.log(res)
-      }
-    })
+    
+    // 获取banner左边的列表
+    let navListArr = []
+      $.ajax({
+        url:'../lib/banner_nav.json',
+        dataType:'json',
+        success:function(res){
+          console.log(res)
+          let str = ''
+          res.forEach(item=>{
+            str += `
+            <li>
+              <a href="javascript:;"><span>${item.name}</span><span class="iconfont icon-iconfonti"></span></a>
+            </li>
+            `
+          })
+          $('.list > ul')
+          .html(str)
+          .on({
+            mouseenter:()=>$('.navlist_wrap').show(),
+            mouseleave:()=>$('.navlist_wrap').hide()
+          })
+          .children('li')
+          .on('mouseover',function(){
+            let index = $(this).index()
+            let list = res[index].list
+            console.log(index)
+            let str = ''
+            list.forEach(item=>{
+              console.log(item)
+              str += `
+              <li data-id="${item.goods_id}">
+                <img
+                  src="${item.pc_img}"
+                  alt="">
+                <p>${item.goods_name}</p>
+              </li>
+              `
+            })
+            $('.navlist_wrap>.nav_list>ul').html(str)
+            navListArr = list
+          })
+          $('.navlist_wrap')
+            .on({
+              mouseover: function () { $(this).finish().show() },
+              mouseout: function () { $(this).finish().hide() }
+            })
+        }
+      })
+    
+    // 手机列表
+    getPhoneList()
+    function getPhoneList(){
+      $.ajax({
+        url:'../lib/phone.json',
+        dataType:'json',
+        success:function(res){
+          console.log(res)
+          let str = ''
+          res.forEach(item=>{
+            console.log(item)
+            str += `
+            <li>
+              <img
+                src="${item.pc_img}"
+                alt="">
+              <h4 class="title">${item.goods_name}</h4>
+              <p class="desc">${item.desc}</p>
+              <p class="price">
+                <span>${item.goods_price}</span>元
+              </p>
+            </li>
+            `
+          })
+          $('.phone_r ul').html(str)
+        }
+      })
+    }
+   
+
+    // nav_list跳转详情页
+$('.nav_list > ul').on('click', 'li', function () {
+  console.log($(this).html())
+  console.log($(this).data('id'))
+  console.log(navListArr)
+  let pid = $(this).data('id')
+  let data = {}
+  for (let i = 0; i < navListArr.length; i++) {
+    if (navListArr[i].goods_id == pid) {
+      data = navListArr[i]
+      break;
+    }
+  }
+  localStorage.setItem('goods_info', JSON.stringify(data))
+  location.href = `./detail.html`
+})
   </script>
 </body>
 

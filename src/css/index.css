@@ -211,6 +211,7 @@ body {
   height: 69px;
 }
 .banner .list {
+  background: rgba(0, 0, 0, 0.5);
   width: 234px;
   height: 420px;
   padding: 20px 0;
@@ -229,22 +230,28 @@ body {
   color: #fff;
   padding-left: 30px;
 }
+.banner .list > ul li a .icon-iconfonti {
+  float: right;
+  margin-right: 20px;
+  font-size: 26px;
+}
 .banner .list > ul li:hover {
   background: #ff6700;
 }
 .banner .navlist_wrap {
-  float: left;
+  position: absolute;
   left: 234px;
   top: 0;
-  z-index: 999;
-  width: 100%;
+  display: none;
+  z-index: 888;
+  width: 992px;
 }
 .banner .navlist_wrap .nav_list {
   height: 460px;
   top: 0;
   left: 234px;
   z-index: 999;
-  background: #f00;
+  background: #fff;
   border-top: solid 1px #e0e0e0;
 }
 .banner .navlist_wrap .nav_list > ul {

@@ -142,10 +142,6 @@ body{
         }
     }
 
-    // .nav_box{
-    //     width: 100%;
-
-    // }
 
     .nav_box {
         background: #fff;
@@ -277,7 +273,7 @@ body{
     }
 
     .list {
-        // background: ;
+        background:rgba(0,0,0,0.5) ;
         width: 234px;
         height: 420px;
         padding: 20px 0;
@@ -295,6 +291,11 @@ body{
                     font-size: 14px;
                     color: #fff;
                     padding-left: 30px;
+                    .icon-iconfonti{
+                        float: right;
+                        margin-right: 20px;
+                        font-size: 26px;
+                    }
                 }
 
                 &:hover {
@@ -304,11 +305,13 @@ body{
         }
     }
     .navlist_wrap{
-        float: left;
+        // float: left;
+        position: absolute;
         left:234px ;
         top: 0;
-        z-index: 999;
-        width: 100%;
+        display: none;
+        z-index: 888;
+        width: 992px;
         .nav_list {
             // width: 892px;
             // display: flex;
@@ -316,7 +319,7 @@ body{
             top: 0;
             left: 234px;
             z-index: 999;
-            background: #f00;
+            background: #fff;
             border-top: solid 1px #e0e0e0;
     
             >ul {

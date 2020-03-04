@@ -1,0 +1,254 @@
+.container {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+body{
+    background: #f5f5f5;
+}
+.headerWrap {
+    font-size: 12px;
+    border-bottom: 2px solid #ff6700;
+    height: 100px;
+    background: #fff;
+    color: #b0b0b0;
+
+    .header {
+        .logo {
+            width: 48px;
+            height: 48px;
+            margin-right: 45px;
+            margin-top: 28px;
+            background: #ff6700;
+
+            >img {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        .header_title {
+            width: 491px;
+            height: 48px;
+            margin-top: 26px;
+
+            >h2 {
+                float: left;
+                font-size: 28px;
+                color: #424242;
+            }
+
+            >p {
+                float: left;
+                width: 336px;
+                color: #757575;
+                margin: 20px 0 0 15px;
+            }
+        }
+
+        .login {
+            float: right;
+            width: 72px;
+            height: 40px;
+            margin-top: 30px;
+            line-height: 40px;
+            display:block;
+            >a {
+                color: #757575;
+            }
+        }
+        .already{
+            float: right;
+            width: 90px;
+            height: 40px;
+            margin-top: 30px;
+            line-height: 40px;
+            display:none;
+            >a {
+                color: #757575;
+                display: inline-block;
+            }
+            >span{
+                margin: 0 5px;
+            }
+            .username{
+                width: 50px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+
+.cart {
+    background: #fff;
+    input{
+        cursor: pointer;
+    }
+    .cart_head {
+        font-size: 14px;
+        color: #424242;
+        line-height: 70px;
+        // background: red;
+
+        >div {
+            height: 70px;
+        }
+    }
+
+    .cart-check {
+        width: 110px;
+
+        // text-align: center;
+        >input {
+            width: 20px;
+            height: 20px;
+            background: 0;
+            margin: 0 15px 0 24px;
+            vertical-align: middle;
+        }
+    }
+
+    .cart-img {
+        width: 120px;
+        >img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .cart-name {
+        width: 380px;
+    }
+
+    .cart-price {
+        width: 140px;
+        padding-right: 18px;
+        text-align: center;
+    }
+
+    .cart-num {
+        width: 150px;
+        text-align: center;
+    }
+
+    .cart-total {
+        width: 120px;
+        padding-right: 81px;
+        text-align: right;
+    }
+
+    .cart-action {
+        width: 80px;
+        text-align: center;
+    }
+
+    .cart_list {
+        
+        .cart_box {
+            line-height: 86px;
+            padding: 15px 0;
+            color: #424242;
+            border-top: 1px solid #e0e0e0;
+            >div {
+                height: 86px;
+            }
+
+            .cart-name {
+                font-size: 18px;
+            }
+
+            .cart-price {
+                font-size: 16px;
+            }
+
+            .cart-num {
+                font-size: 20px;
+                .addBtn,.subBtn{
+                    width: 38px;
+                    height: 38px;
+                    border: 1px solid #e0e0e0;
+                    font-size: 20px;
+                    color: #757575;
+                }
+                .num{
+                    color: #424242;
+                    font-size: 16px;
+                    text-align: center;
+                }
+                >input{
+                    width: 72px;
+                    height: 36px;
+                    padding: 0;
+                    background: #fff;
+                    border-top: 1px solid #e0e0e0;
+                    border-bottom: 1px solid #e0e0e0;
+                    margin-top: 24px;
+                }
+            }
+
+            .cart-total {
+                font-size: 16px;
+                color: #ff7600;
+            }
+
+            .cart-action {
+                .delBtn {
+                    width: 25px;
+                    height: 25px;
+                    text-indent: -1px;
+                    line-height: 20px;
+                    background: none;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    color: #757575;
+                    &:hover{
+                        background: #f00;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    // 结算
+}
+.cart_account{
+    height: 50px;
+    margin-top: 20px;
+    background: #fafafa;
+    line-height: 50px;
+    font-size: 14px;
+    .account_l{
+        >a{
+            color: #757575;
+            margin-left: 32px;
+        }
+        >span{
+            color: #757575;
+            margin-left: 16px;
+        }
+        .cartNum,.selNum{
+            color: #ff6700;
+        }
+    }
+
+    .account_r{
+        >span{
+            color: #ff6700;
+            >i{
+                font-size: 30px;
+            }
+        }
+        >a{
+            display: inline-block;
+            width: 202px;
+            text-align: center;
+            font-size: 18px;
+            color: #b0b0b0;
+            margin-left: 50px;
+            background: #e0e0e0;
+        }
+    }
+}

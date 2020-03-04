@@ -17,11 +17,11 @@ $('.nav_top >li')
         <li>
           <div>
             <img
-              src="${item.list_url}"
+              src="${item.pc_img}"
               alt="">
           </div>
-          <p>${item.list_name}</p>
-          <p>${item.list_price}</p>
+          <p>${item.goods_name}</p>
+          <p>${item.goods_price}</p>
         </li>
         `
                 });

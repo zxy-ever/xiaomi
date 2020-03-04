@@ -3,12 +3,253 @@
     margin: 0 auto;
 }
 
+.header_wrap {
+    height: 40px;
+    background: #333;
+}
+
+.header {
+    width: 1226px;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+    font-size: 12px;
+
+    .header_l {
+        li {
+            display: inline-block;
+
+            a {
+                color: #b0b0b0;
+            }
+        }
+
+        span {
+            display: inline-block;
+            color: #424242;
+            padding: 0 4px;
+        }
+    }
+
+    .header_r {
+        li {
+            display: inline-block;
+            padding: 0 5px;
+
+            a {
+                color: #b0b0b0;
+            }
+
+            ;
+
+            &:nth-child(3) {
+                padding: 0 10px;
+            }
+
+            &::nth-child(4) {
+                margin-left: 15px;
+            }
+        }
+
+        span {
+            display: inline-block;
+            color: #424242;
+        }
+
+        // 购物车按钮
+        .cart {
+            // margin-left: 15px;
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            background: #424242;
+
+            .cart_logo {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+                background: url(../images/cart.png);
+                background-size: contain;
+            }
+        }
+
+        // 购物车按钮悬浮//购物车有数据
+        .cart_hover {
+            display: block;
+            width: 120px;
+            height: 40px;
+            text-align: center;
+            color: #fff;
+            background: #ff6700;
+        }
+    }
+}
+
+// nav
+.nav {
+    width: 1226px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+
+    // logo
+    .logo {
+        width: 55px;
+        height: 55px;
+        background: #ff6700;
+        margin-top: 22px;
+
+        .mi-logo {
+            display: block;
+            width: 49px;
+            height: 49px;
+            margin: 3px auto;
+            background: url(../images/mi-logo.png);
+        }
+    }
+
+    // ul列表
+    .nav_top {
+        width: 728px;
+        height: 100px;
+        // box-sizing:content-box;
+        padding-left: 142px;
+
+        li {
+            display: inline-block;
+            line-height: 100px;
+            height: 100px;
+
+            // &:nth-of-type(1) {
+            //     margin-left: 25px;
+            //     width: 127px;
+            //     padding: 0;
+            //     padding-right: 15px;
+            // }
+
+            a {
+                padding: 26px 10px 38px;
+                font-size: 16px;
+
+                &:hover {
+                    color: #ff6700;
+                }
+            }
+        }
+    }
+
+    // .nav_box{
+    //     width: 100%;
+
+    // }
+
+    .nav_box {
+        background: #fff;
+        border-top: 1px solid #e0e0e0;
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        z-index: 9999;
+
+        >ul {
+            display: flex;
+
+            >li {
+                flex: 1;
+                padding-top: 35px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 35px;
+
+                >div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 203px;
+                    border-right: 1px solid #e0e0e0;
+                    margin-bottom: 23px;
+
+                    img {
+                        width: 160px;
+                        height: 110px;
+                        display: block;
+                    }
+                }
+
+                >p {
+                    line-height: 1;
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    color: rgb(51, 51, 51);
+
+                    &:last-child {
+                        color: #ff6700;
+                    }
+                }
+
+                &:last-child {
+                    >div {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+
+    //搜索框
+    .search {
+        width: 296px;
+        margin-top: 25px;
+        position: relative;
+
+        .txt {
+            width: 223px;
+            height: 48px;
+            border: solid 1px #e0e0e0;
+            padding: 0 10px;
+        }
+
+        .search_btn {
+            width: 50px;
+            height: 50px;
+            border: solid 1px #e0e0e0;
+            border-left: 0;
+            // padding: 0 6px;
+            background: none;
+
+            &:hover {
+                background: #ff6700;
+            }
+        }
+
+        .keyword {
+            position: absolute;
+            top: 14px;
+            left: 62px;
+
+            a {
+                padding: 0 5px;
+                font-size: 12px;
+                background: #eee;
+                color: #757575;
+
+                &:hover {
+                    background: #ff6700;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
 .detail {
-    background: firebrick;
     padding: 32px 0;
 
     >.small {
-        background: firebrick;
 
         >img {
             width: 560px;
@@ -48,6 +289,138 @@
             font-size: 16px;
             background: #ff6700;
             margin-top: 30px;
+        }
+    }
+}
+
+
+// footer
+.footer{
+    .footerWrap{
+        background:#fff;
+    }
+    .footer_t{
+        height: 25px;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 27px 0;
+        >ul{
+            width: 100%;
+            >li{
+                float: left;
+                width:20%;
+                border-left: solid 1px #e0e0e0;
+                box-sizing: border-box;
+                text-align: center;
+                line-height: 25px;
+                font-size: 16px;
+                &:nth-child(1){
+                    border: 0;
+                }
+                >a{
+                    color: #616161;
+                    &:hover{
+                        color: #ff6709;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer_link{
+        padding: 40px 0;
+        >dl{
+            float: left;
+            width:160px;
+            height: 112px;
+        >dt{
+            font-size: 14px;
+            height: 18px;
+            line-height: 18px;
+            color: #424242;
+            margin: 0 0 26px;
+        }
+        >dd{
+            margin-top: 10px;
+            >a{
+                font-size: 12px;
+                color: #757575;
+            }
+        }
+        }
+        .contact{
+            width: 251px;
+            height: 112px;
+            text-align: center;
+            border-left: solid 1px #e0e0e0;
+            .phonenum{
+                font-size:22px;
+                color: #ff6700;
+                height: 22px;
+                line-height: 22px;
+                margin-bottom: 5px;
+            }
+            >p{
+                font-size: 12px;
+                color: #616161;
+                height: 36px;
+                margin-bottom: 16px;
+            }
+            >a{
+                display: block;
+                font-size: 12px;
+                color: #ff6700;
+                width: 120px;
+                height: 30px;
+                line-height: 30px;
+                background: #fff;
+                border: solid 1px #ff6700;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .footer_b{
+        position: relative;
+        padding: 30px 0;
+        .logo{
+            width: 57px;
+            height: 57px;
+            margin-right: 10px;
+            background: url(//s02.mifile.cn/assets/static/image/logo-footer.png) no-repeat 50% 50%;
+            position: absolute;
+            left: 0;
+            top: 30px;
+        }
+
+        .infotext{
+            padding-left: 67px;
+            >ul{
+                display: flex;
+                font-size:12px;
+                color: #757575;
+                line-height: 18px;
+                li{
+                    padding: 0 2px;
+                }
+            }
+            >p{
+                font-size: 12px;
+                color: #b0b0b0;
+                line-height: 18px;
+                >a{
+                    color: #b0b0b0;
+                }
+            }
+        }
+
+        .infolink{
+            padding-left: 67px;
+            margin-top: 4px;
+            >img{
+                float: left;
+                height: 28px;
+                margin-bottom: 15px;
+            }
         }
     }
 }
