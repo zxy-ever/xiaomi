@@ -18,12 +18,16 @@ body {
   margin: 0 auto;
   line-height: 40px;
   font-size: 12px;
+  position: relative;
 }
 .header .header_l li {
   display: inline-block;
 }
 .header .header_l li a {
   color: #b0b0b0;
+}
+.header .header_l li a:hover {
+  color: #fff;
 }
 .header .header_l span {
   display: inline-block;
@@ -36,6 +40,9 @@ body {
 }
 .header .header_r li a {
   color: #b0b0b0;
+}
+.header .header_r li a:hover {
+  color: #fff;
 }
 .header .header_r li:nth-child(3) {
   padding: 0 10px;
@@ -62,13 +69,78 @@ body {
   background: url(../images/cart.png);
   background-size: contain;
 }
-.header .header_r .cart_hover {
-  display: block;
-  width: 120px;
-  height: 40px;
+.header .smallCart {
+  position: absolute;
+  background: #fff;
+  width: 320px;
+  z-index: 10000;
+  right: 0;
+  top: 40px;
+  display: none;
+  box-shadow: 0px 0px 5px #eee;
+}
+.header .smallCart > p {
+  width: 320px;
+  font-size: 12px;
+  color: #757575;
   text-align: center;
-  color: #fff;
+  line-height: 100px;
+  background: #fff;
+}
+.header .smallCart > ul {
+  width: 278px;
+  width: 100%;
+  max-height: 490px;
+  overflow-y: auto;
+  padding-top: 20px;
+}
+.header .smallCart > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  border-top: solid 1px #b0b0b0;
+}
+.header .smallCart > ul > li:first-child {
+  border: 0;
+}
+.header .smallCart > ul > li > img {
+  width: 70px;
+  height: 70px;
+}
+.header .smallCart > ul > li > p {
+  width: 100px;
+  line-height: 20px;
+  margin: 0 10px;
+}
+.header .smallCart .smallBottom {
+  display: flex;
+  height: 72px;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0 10px;
+}
+.header .smallCart .smallBottom .bnum {
+  font-size: 12px;
+  color: #757575;
+  line-height: 20px;
+}
+.header .smallCart .smallBottom .btotal {
+  font-size: 12px;
+  color: #ff6700;
+}
+.header .smallCart .smallBottom .btotal > em {
+  font-size: 24px;
+}
+.header .smallCart .smallBottom > button {
+  width: 134px;
+  height: 42px;
   background: #ff6700;
+  font-size: 14px;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
 }
 
 .nav {
@@ -169,9 +241,17 @@ body {
   border: solid 1px #e0e0e0;
   border-left: 0;
   background: none;
+  font-family: iconfont !important;
 }
 .nav .search .search_btn:hover {
   background: #ff6700;
+}
+.nav .search .search_btn:hover .icon-sousuo {
+  color: #fff;
+}
+.nav .search .search_btn .icon-sousuo {
+  font-size: 24px;
+  color: #616161;
 }
 .nav .search .keyword {
   position: absolute;
@@ -302,6 +382,10 @@ body {
 }
 .footer .footer_t > ul > li > a {
   color: #616161;
+}
+.footer .footer_t > ul > li > a > .iconfont {
+  font-size: 24px;
+  vertical-align: middle;
 }
 .footer .footer_t > ul > li > a:hover {
   color: #ff6709;

@@ -70,6 +70,23 @@
                 border: 0;
                 margin-top: 25px;
             }
+            .errInfo{
+                display: none;
+                padding-top: 10px;
+                .err-icon{
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    background: url('https://account.xiaomi.com/static/res/f234829/account-static/respassport/acc-2014/img/sprite_login.gif') no-repeat ;
+                    background-position: 0 -69px;
+                    vertical-align: middle;
+                }
+                span{
+                    font-size: 14px;
+                    color: #f56600;
+                    vertical-align: middle;
+                }
+            }
         }
         
         // 登录注册

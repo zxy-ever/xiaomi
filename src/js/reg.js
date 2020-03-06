@@ -1,9 +1,7 @@
 // 手机号失去焦点
 let nameflag = false;
 $('.username').blur(function () {
-    console.log('失去焦点了')
     let username = $(this).val()
-    console.log(username)
     if (username === '') {
         $(this).css('border-color', '#f00')
         $('.phone').css('display', 'none')
@@ -33,7 +31,6 @@ $('.username').blur(function () {
             username
         }
     }).then(res => {
-        console.log(res)
         if (res.code == 0) {
             $(this).css('border-color', '#f00')
             $('.phone').css('display', 'none')
@@ -52,9 +49,7 @@ $('.username').blur(function () {
 // 密码框失去焦点
 let pwdflag = false;
 $('.password').blur(function () {
-    console.log('失去焦点了')
     let password = $(this).val()
-    console.log(password)
     if (!(/\d{4,16}$/.test(password)) || password === '') {
         $(this).css('border-color', '#f00')
         $('.pwd').css('display', 'none')
@@ -76,8 +71,8 @@ $('.regBtn').click(function () {
             url: 'http://jx.xuzhixiang.top/ap/api/reg.php',
             type:'get',
             data:{
-                username,
-                password
+                username:$('.username').val(),
+                password:$('.password').val()
             }
         }).then(res=>{
             if(res.code == 1){

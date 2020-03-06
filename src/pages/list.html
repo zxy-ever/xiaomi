@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/until.css">
     <link rel="stylesheet" href="../lib/jqueryPage/src/jquery.page.css">
+    <link rel="stylesheet" href="../lib/font/iconfont.css">
     <link rel="stylesheet" href="../css/list.css">
 
 </head>
@@ -29,8 +30,8 @@
                 <li><a href="JavaScript:;">Select Location</a></li>
             </ul>
             <ul class="header_r fr">
-                <li><a href="./login.html">登录</a></li><span>|</span>
-                <li><a href="./reg.html">注册</a></li><span>|</span>
+                <li class="login"><a href="./login.html">登录</a></li><span>|</span>
+                <li class="reg"><a href="./reg.html">注册</a></li><span>|</span>
                 <li><a href="JavaScript:;">消息通知</a></li>
                 <li>
                     <a href="../pages/cart.html" class="cart">
@@ -40,13 +41,35 @@
                     </a>
                 </li>
             </ul>
+            <!-- 购物车缩略窗口 -->
+            <div class="smallCart">
+                <ul>
+                    <li>
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/18c9d79b3d6c6635c55ba1bb371182af.jpg?thumb=1&w=40&h=40&f=webp&q=90"
+                            alt="">
+                        <p>小米净水滤芯小米净水滤芯</p>
+                        <span><i>69</i>元 ×<i>3</i></span>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                        <span><i>69</i>元 ×<i>3</i></span>
+                    </li>
+                </ul>
+                <div class="smallBottom">
+                    <div class="bottom_l">
+                        <p class="bnum">共 <i>4</i> 件商品</p>
+                        <p class="btotal"><em>376</em>元</p>
+                    </div>
+                    <button>去购物车结算</button>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- nav -->
     <div class="nav clean">
         <div class="logo fl">
-            <a href="javascript:;" class="mi-logo"></a>
+            <a href="./index.html" class="mi-logo"></a>
         </div>
         <ul class="fl nav_top">
             <!-- <li><a href="javascript:;"></a></li> -->
@@ -56,7 +79,7 @@
             <li><a href="javascript:;">笔记本</a></li>
             <li><a href="javascript:;">家电</a></li>
             <li><a href="javascript:;">路由器</a></li>
-            <li><a href="javascript:;">只能硬件</a></li>
+            <li><a href="javascript:;">智能硬件</a></li>
             <li><a href="javascript:;">服务</a></li>
             <li><a href="javascript:;">社区</a></li>
         </ul>
@@ -67,7 +90,7 @@
                 <a href="javascript:;">Redmi Note 8</a>
             </div>
             <input type="text" class="txt fl">
-            <input type="button" class="search_btn fl">
+            <button class="search_btn fl"><i class="iconfont icon-sousuo"></i></button>
         </div>
 
         <!--.nav_box -->
@@ -247,11 +270,21 @@
         <div class="footerWrap">
             <div class="footer_t  container">
                 <ul>
-                    <li><a href="">预约维修服务</a></li>
-                    <li><a href="">7天无理由退货</a></li>
-                    <li><a href="">15天免费换货</a></li>
-                    <li><a href="">满99元包邮</a></li>
-                    <li><a href="">520余家售后网点</a></li>
+                    <li><a href="">
+                        <i class="iconfont icon-buoumaotubiao46"></i>
+                        预约维修服务</a></li>
+                    <li><a href="">
+                        <i class="iconfont icon-qitianwuliyoutuihuan"></i>
+                        7天无理由退货</a></li>
+                    <li><a href="">
+                        <i class="iconfont icon-15tianwuliyoutuihuo"></i>
+                        15天免费换货</a></li>
+                    <li><a href="">
+                        <i class="iconfont icon-iconfront-"></i>
+                        满99元包邮</a></li>
+                    <li><a href="">
+                        <i class="iconfont icon-ditu"></i>
+                        520余家售后网点</a></li>
                 </ul>
             </div>
             <div class="footer_link container clean">
@@ -262,36 +295,36 @@
                     <dd><a href="">订单操作</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="">帮助中心</a></dt>
-                    <dd><a href="">账户管理</a></dd>
-                    <dd><a href="">购物指南</a></dd>
-                    <dd><a href="">订单操作</a></dd>
+                    <dt><a href="">服务支持</a></dt>
+                    <dd><a href="">售后政策</a></dd>
+                    <dd><a href="">自动服务</a></dd>
+                    <dd><a href="">相关下载</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="">帮助中心</a></dt>
-                    <dd><a href="">账户管理</a></dd>
-                    <dd><a href="">购物指南</a></dd>
-                    <dd><a href="">订单操作</a></dd>
+                    <dt><a href="">线下门店</a></dt>
+                    <dd><a href="">小米之家</a></dd>
+                    <dd><a href="">服务网点</a></dd>
+                    <dd><a href="">授权体验店</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="">帮助中心</a></dt>
-                    <dd><a href="">账户管理</a></dd>
-                    <dd><a href="">购物指南</a></dd>
-                    <dd><a href="">订单操作</a></dd>
+                    <dt><a href="">关于小米</a></dt>
+                    <dd><a href="">加入小米</a></dd>
+                    <dd><a href="">了解小米</a></dd>
+                    <dd><a href="">投资者关系</a></dd>
+                    <dd><a href="">廉洁举报</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="">帮助中心</a></dt>
-                    <dd><a href="">账户管理</a></dd>
-                    <dd><a href="">购物指南</a></dd>
-                    <dd><a href="">订单操作</a></dd>
+                    <dt><a href="">关于我们</a></dt>
+                    <dd><a href="">新浪微博</a></dd>
+                    <dd><a href="">官网微信</a></dd>
+                    <dd><a href="">联系我们</a></dd>
                 </dl>
                 <dl>
-                    <dt><a href="">帮助中心</a></dt>
-                    <dd><a href="">账户管理</a></dd>
-                    <dd><a href="">购物指南</a></dd>
-                    <dd><a href="">订单操作</a></dd>
+                    <dt><a href="">特色服务</a></dt>
+                    <dd><a href="">F码通道</a></dd>
+                    <dd><a href="">礼物码</a></dd>
+                    <dd><a href="">防伪查询</a></dd>
                 </dl>
-
                 <div class="contact fr">
                     <p class="phonenum">
                         400-100-5678
@@ -300,7 +333,9 @@
                         周一至周日 8:00 - 18:00<br>
                         (仅收市话费)
                     </p>
-                    <a href="javascript:;">人工客服</a>
+                    <a href="javascript:;">
+                        <i class="iconfont icon-conversation_icon"></i>
+                        人工客服</a>
                 </div>
             </div>
         </div>
@@ -347,135 +382,10 @@
     </div>
 
     <script src="../lib/jquery/dist/jquery.min.js"></script>
-    <script src="../js/list.js"></script>
     <script src="../lib/jqueryPage/src/jquery.page.js"></script>
+    <script src="../js/list.js"></script>
+    <script src="../js/smallCart.js"></script>
 
-
-    <script>
-        console.log(11)
-        getList()
-        // 准备一个变量
-        let flag = true;
-        // 准备一个变量接受数组
-        let sortList = []
-        // 
-        // 请求列表数据
-        function getList() {
-            $.ajax({
-                url: '../lib/seckill.json',
-                dataType: 'json',
-                success(res) {
-                    console.log(res)
-                    // 渲染分页器
-                    $("#page").Page({
-                        totalPages: Math.ceil(res.length / 9), //total Pages
-                        liNums: 7, //the li numbers(advice use odd)
-                        activeClass: 'activP', //active class style
-                        firstPage: '首页', //first button name
-                        lastPage: '末页', //last button name
-                        prv: '<<', //prev button name
-                        next: '>>', //next button name
-                        hasFirstPage: true, //whether has first button
-                        hasLastPage: true, //whether has last button
-                        hasPrv: true, //whether has prev button
-                        hasNext: true, //whether has next button
-                        callBack: function (page) {
-                            //callBack function，page:active page
-                            console.log(page)
-                            let list = res.slice((page - 1) * 9, page * 9)
-                            bindhtml(list)
-
-                            
-                        }
-                    });
-
-                    bindhtml(res.slice(0, 9))
-                    sortList = res
-                    console.log(sortList)
-                }
-            })
-
-        }
-
-        // 跳转详情页
-        $('.list_con > ul').on('click', 'li', function () {
-            console.log($(this).attr('data-id'))
-            let pid = $(this).data('id')
-            console.log(pid)
-            let data  ={}
-            for(let i= 0;i<sortList.length;i++){
-                if(sortList[i].goods_id == pid){
-                    data = sortList[i]
-                    break;
-                }
-            }
-            localStorage.setItem('goods_info',JSON.stringify(data))
-            location.href = `./detail.html`
-        })
-
-        // 渲染列表数据
-        function bindhtml(list) {
-            console.log(list)
-            let str = ''
-            list.forEach(item => {
-                str += `
-                        <li class="clean" data-id="${item.goods_id}">
-                            <div class="list_img fl">
-                                <img src="${item.img}"
-                                    alt="">
-                            </div>
-                            <div class="list_txt fr">
-                                <h4>${item.goods_name}</h4>
-                                <p>${item.desc}</p>
-                                <p class="price"><span>${item.goods_price}</span>元</p>
-                                <a href="">加入购物车</a>
-                            </div>
-                        </li>
-                        `
-            })
-            $('.list_con > ul').html(str)
-        }
-    
-        // 价格排序
-        $('.byPrice').click(function(){
-            flag = !flag;
-            console.log(flag)
-            sortList.sort(function(a,b){
-                if(flag === true){
-                    return a.goods_price - b.goods_price
-                }else{
-                    return b.goods_price - a.goods_price
-                }
-            })
-            $("#page").Page({
-                        totalPages: Math.ceil(sortList.length / 9), //total Pages
-                        liNums: 7, //the li numbers(advice use odd)
-                        activeClass: 'activP', //active class style
-                        firstPage: '首页', //first button name
-                        lastPage: '末页', //last button name
-                        prv: '<<', //prev button name
-                        next: '>>', //next button name
-                        hasFirstPage: true, //whether has first button
-                        hasLastPage: true, //whether has last button
-                        hasPrv: true, //whether has prev button
-                        hasNext: true, //whether has next button
-                        callBack: function (page) {
-                            //callBack function，page:active page
-                            console.log(page)
-                            let list = sortList.slice((page - 1) * 9, page * 9)
-                            bindhtml(list)
-
-                            
-                        }
-                    });
-
-                    bindhtml(sortList.slice(0, 9))
-        })
-        // 综合排序
-        $('.byTotal').click(function(){
-            getList()
-        })
-    </script>
 </body>
 
 </html>

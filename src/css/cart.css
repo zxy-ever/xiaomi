@@ -74,6 +74,54 @@ body {
   text-overflow: ellipsis;
 }
 
+.empty {
+  width: 668px;
+  height: 273px;
+  padding-left: 558px;
+  margin-top: 110px;
+  margin-bottom: 130px;
+  overflow: hidden;
+  background: url("https://s01.mifile.cn/i/cart/cart-empty.png") no-repeat 124px 0;
+}
+.empty > h2 {
+  font-size: 36px;
+  color: #b0b0b0;
+  margin: 50px 0 20px;
+}
+.empty > .loginBtn {
+  display: inline-block;
+  width: 170px;
+  height: 48px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 48px;
+  background: #ff6700;
+  color: #fff;
+  border: solid 1px #ff6700;
+  margin-right: 10px;
+}
+.empty > .listBtn {
+  display: inline-block;
+  width: 170px;
+  height: 48px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 48px;
+  color: #ff6700;
+  border: solid 1px #ff6700;
+}
+.empty .listBtnAlready {
+  display: inline-block;
+  width: 170px;
+  height: 48px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 48px;
+  color: #ff6700;
+  margin-left: 70px;
+  border: solid 1px #ff6700;
+}
+
 .cart {
   background: #fff;
 }
@@ -202,15 +250,19 @@ body {
 .cart_account .account_l .cartNum, .cart_account .account_l .selNum {
   color: #ff6700;
 }
+.cart_account .account_r {
+  height: 50px;
+}
 .cart_account .account_r > span {
   color: #ff6700;
 }
 .cart_account .account_r > span > i {
   font-size: 30px;
 }
-.cart_account .account_r > a {
-  display: inline-block;
+.cart_account .account_r > .pay {
   width: 202px;
+  height: 50px;
+  border: 0;
   text-align: center;
   font-size: 18px;
   color: #b0b0b0;

@@ -81,6 +81,56 @@ body{
     }
 }
 
+// 购物车为空
+.empty{
+    width: 668px;
+    height: 273px;
+    padding-left: 558px;
+    margin-top: 110px;
+    margin-bottom: 130px;
+    overflow: hidden;
+    background: url('https://s01.mifile.cn/i/cart/cart-empty.png') no-repeat 124px 0;
+    >h2{
+        font-size: 36px;
+        color: #b0b0b0;
+        margin: 50px 0 20px;
+    }
+    >.loginBtn{
+        display: inline-block;
+        width: 170px;
+        height: 48px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 48px;
+        background: #ff6700;
+        color: #fff;
+        border: solid 1px #ff6700;
+        margin-right: 10px;
+    }
+    >.listBtn{
+        display: inline-block;
+        width: 170px;
+        height: 48px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 48px;
+        // background: #ff6700;
+        color: #ff6700;
+        border: solid 1px #ff6700;
+    }
+    .listBtnAlready{
+        display: inline-block;
+        width: 170px;
+        height: 48px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 48px;
+        // background: #ff6700;
+        color: #ff6700;
+        margin-left: 70px;
+        border: solid 1px #ff6700;
+    }
+}
 .cart {
     background: #fff;
     input{
@@ -235,15 +285,18 @@ body{
     }
 
     .account_r{
+        height: 50px;
         >span{
             color: #ff6700;
             >i{
                 font-size: 30px;
             }
         }
-        >a{
-            display: inline-block;
+        >.pay{
+            // display: inline-block;
             width: 202px;
+            height: 50px;
+            border:0;
             text-align: center;
             font-size: 18px;
             color: #b0b0b0;

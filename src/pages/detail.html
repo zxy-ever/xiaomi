@@ -2,302 +2,241 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/until.css">
-    <link rel="stylesheet" href="../css/detail.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/until.css">
+  <link rel="stylesheet" href="../lib/font/iconfont.css">
+  <link rel="stylesheet" href="../css/detail.css">
+  <style>
+    .round-loupe {
+      border-radius: 75px;
+      border: 5px solid #F0F0F0;
+    }
+  </style>
 </head>
 
 <body>
-    <!-- header -->
-    <div class="header_wrap">
-        <div class="header">
-            <ul class="header_l fl">
-                <li><a href="JavaScript:;">小米商城</a></li><span>|</span>
-                <li><a href="JavaScript:;">MIUI</a></li><span>|</span>
-                <li><a href="JavaScript:;">loT</a></li><span>|</span>
-                <li><a href="JavaScript:;">云服务</a></li><span>|</span>
-                <li><a href="JavaScript:;">金融</a></li><span>|</span>
-                <li><a href="JavaScript:;">有品</a></li><span>|</span>
-                <li><a href="JavaScript:;">小爱开放平台</a></li><span>|</span>
-                <li><a href="JavaScript:;">企业团购</a></li><span>|</span>
-                <li><a href="JavaScript:;">资质证照</a></li><span>|</span>
-                <li><a href="JavaScript:;">协议规则</a></li><span>|</span>
-                <li><a href="JavaScript:;">下载app</a></li><span>|</span>
-                <li><a href="JavaScript:;">Select Location</a></li>
-            </ul>
-            <ul class="header_r fr">
-                <li><a href="./login.html">登录</a></li><span>|</span>
-                <li><a href="./reg.html">注册</a></li><span>|</span>
-                <li><a href="JavaScript:;">消息通知</a></li>
-                <li>
-                    <a href="../pages/cart.html" class="cart">
-                        <i class="cart_logo"></i>
-                        <em>购物车</em>
-                        <em class="num">（0）</em>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- nav -->
-    <div class="nav clean">
-        <div class="logo fl">
-            <a href="./index.html" class="mi-logo"></a>
-        </div>
-        <ul class="fl nav_top">
-            <!-- <li><a href="javascript:;"></a></li> -->
-            <li><a href="javascript:;">小米手机</a></li>
-            <li><a href="javascript:;">Redmi红米</a></li>
-            <li><a href="javascript:;">电视</a></li>
-            <li><a href="javascript:;">笔记本</a></li>
-            <li><a href="javascript:;">家电</a></li>
-            <li><a href="javascript:;">路由器</a></li>
-            <li><a href="javascript:;">只能硬件</a></li>
-            <li><a href="javascript:;">服务</a></li>
-            <li><a href="javascript:;">社区</a></li>
+  <!-- header -->
+  <div class="header_wrap">
+    <div class="header">
+      <ul class="header_l fl">
+        <li><a href="JavaScript:;">小米商城</a></li><span>|</span>
+        <li><a href="JavaScript:;">MIUI</a></li><span>|</span>
+        <li><a href="JavaScript:;">loT</a></li><span>|</span>
+        <li><a href="JavaScript:;">云服务</a></li><span>|</span>
+        <li><a href="JavaScript:;">金融</a></li><span>|</span>
+        <li><a href="JavaScript:;">有品</a></li><span>|</span>
+        <li><a href="JavaScript:;">小爱开放平台</a></li><span>|</span>
+        <li><a href="JavaScript:;">企业团购</a></li><span>|</span>
+        <li><a href="JavaScript:;">资质证照</a></li><span>|</span>
+        <li><a href="JavaScript:;">协议规则</a></li><span>|</span>
+        <li><a href="JavaScript:;">下载app</a></li><span>|</span>
+        <li><a href="JavaScript:;">Select Location</a></li>
+      </ul>
+      <ul class="header_r fr">
+        <li class="login"><a href="./login.html">登录</a></li><span>|</span>
+        <li class="reg"><a href="./reg.html">注册</a></li><span>|</span>
+        <li><a href="JavaScript:;">消息通知</a></li>
+        <li>
+          <a href="../pages/cart.html" class="cart">
+            <i class="cart_logo"></i>
+            <em>购物车</em>
+            <em class="num">（0）</em>
+          </a>
+        </li>
+      </ul>
+      <!-- 购物车缩略窗口 -->
+      <div class="smallCart">
+        <ul>
+          <li>
+            <img
+              src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/18c9d79b3d6c6635c55ba1bb371182af.jpg?thumb=1&w=40&h=40&f=webp&q=90"
+              alt="">
+            <p>小米净水滤芯小米净水滤芯</p>
+            <span><i>69</i>元 ×<i>3</i></span>
+          </li>
+          <li>
+            <img src="" alt="">
+            <span><i>69</i>元 ×<i>3</i></span>
+          </li>
         </ul>
-
-        <div class="search fr">
-            <div class="keyword">
-                <a href="javascript:;">小米9 Pro 5G</a>
-                <a href="javascript:;">Redmi Note 8</a>
-            </div>
-            <input type="text" class="txt fl">
-            <input type="button" class="search_btn fl">
-        </div>
-
-        <!--.nav_box -->
-        <div class="nav_box">
-            <ul>
-            </ul>
-        </div>
-    </div>
-    <div class="detail container clean">
-        <div class="small fl">
-            <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581493807.88134635.jpg" alt="">
-        </div>
-        <div class="info fl">
-            <h2>小米10</h2>
-            <p>骁龙865处理器</p>
-            <p class="txt">小米自营</p>
-            <p class="price"><span>5999</span>元</p>
-            <button id="addCart" data-id="">加入购物车</button>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="footerWrap">
-            <div class="footer_t  container">
-              <ul>
-                <li><a href="">预约维修服务</a></li>
-                <li><a href="">7天无理由退货</a></li>
-                <li><a href="">15天免费换货</a></li>
-                <li><a href="">满99元包邮</a></li>
-                <li><a href="">520余家售后网点</a></li>
-              </ul>
-            </div>
-            <div class="footer_link container clean">
-              <dl>
-                <dt><a href="">帮助中心</a></dt>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">购物指南</a></dd>
-                <dd><a href="">订单操作</a></dd>
-              </dl>
-              <dl>
-                <dt><a href="">帮助中心</a></dt>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">购物指南</a></dd>
-                <dd><a href="">订单操作</a></dd>
-              </dl>
-              <dl>
-                <dt><a href="">帮助中心</a></dt>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">购物指南</a></dd>
-                <dd><a href="">订单操作</a></dd>
-              </dl>
-              <dl>
-                <dt><a href="">帮助中心</a></dt>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">购物指南</a></dd>
-                <dd><a href="">订单操作</a></dd>
-              </dl>
-              <dl>
-                <dt><a href="">帮助中心</a></dt>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">购物指南</a></dd>
-                <dd><a href="">订单操作</a></dd>
-              </dl>
-              <dl>
-                <dt><a href="">帮助中心</a></dt>
-                <dd><a href="">账户管理</a></dd>
-                <dd><a href="">购物指南</a></dd>
-                <dd><a href="">订单操作</a></dd>
-              </dl>
-        
-              <div class="contact fr">
-                <p class="phonenum">
-                  400-100-5678
-                </p>
-                <p>
-                  周一至周日 8:00 - 18:00<br>
-                  (仅收市话费)
-                </p>
-                <a href="javascript:;">人工客服</a>
-              </div>
-            </div>
-        </div>
-      <div class="footer_b  container">
-        <div class="logo"></div>
-        <div class="infotext">
-          <ul>
-            <li>小米商城</li><span>|</span>
-            <li>MIUI</li><span>|</span>
-            <li>米家</li><span>|</span>
-            <li>米聊</li><span>|</span>
-            <li>多看</li><span>|</span>
-            <li>游戏</li><span>|</span>
-            <li>政企服务</li><span>|</span>
-            <li>小米天猫店</li><span>|</span>
-            <li>小米集团隐私政策</li><span>|</span>
-            <li>小米公司儿童信息保护规则</li><span>|</span>
-            <li>小米商城隐私政策</li><span>|</span>
-            <li>小米商城用户协议</li><span>|</span>
-            <li>问题反馈</li><span>|</span>
-            <li>Select Location</li>
-          </ul>
-  
-          <p>
-            &copy;
-            <a href="javascript:;">mi.com</a> 京ICP证110507号
-            <a href="javascript:;">京ICP备10046444号</a> <a href="javascript:;">京公网安备11010802020134号</a> <a
-              href="javascript:;">京网文[2020]0276-042号</a> <br> <a href="javascript:;">（京）网械平台备字（2018）第00005号</a> <a
-              href="javascript:;"">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a> <a href=" javascript:;">营业执照</a> <a
-              href="javascript:;">医疗器械质量公告</a> <br> <a
-              href="javascript:;">增值电信业务许可证</a>&nbsp;网络食品经营备案（京）【2018】WLSPJYBAHF-12&nbsp;
-            <a href="javascript:;">食品经营许可证</a> <br>
-            违法和不良信息举报电话：185-0130-1238&nbsp;<a href="javascript:;">知识产权侵权投诉</a>&nbsp;本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
-          </p>
-        </div>
-        <div class="infolink clean">
-          <img src="https://i1.mifile.cn/f/i/17/site/truste.png" alt="">
-          <img src="https://s01.mifile.cn/i/v-logo-2.png" alt="">
-          <img src="https://s01.mifile.cn/i/v-logo-1.png" alt="">
-          <img src="https://i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="">
+        <div class="smallBottom">
+          <div class="bottom_l">
+            <p class="bnum">共 <i>4</i> 件商品</p>
+            <p class="btotal"><em>376</em>元</p>
+          </div>
+          <button>去购物车结算</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="../lib/jquery/dist/jquery.min.js"></script>
-    <script>
-        let goodsinfo = JSON.parse(localStorage.getItem('goods_info'))
-        console.log(goodsinfo)
-        if (goodsinfo == null) {
-            $('.detail').html('您查看的商品已下架')
-        } else {
-            let str = `
-                <div class="small fl">
-                    <img src="${goodsinfo.pc_img}" alt="">
-                </div>
-                <div class="info fl">
-                    <h2>${goodsinfo.goods_name}</h2>
-                    <p>${goodsinfo.desc}</p>
-                    <p class="txt">小米自营</p>
-                    <p class="price"><span>${goodsinfo.goods_price}</span>元</p>
-                    <button id="addCart" data-id="${goodsinfo.goods_id}">加入购物车</button>
-                </div>
-            `
-            $('.detail').html(str)
-        }
-        // 加入购物车
-        $('#addCart').click(function () {
-            let jsonstr = localStorage.getItem('cart')
-            if (jsonstr) {
-                let jsonstr = localStorage.getItem('cart')
-                let arr = JSON.parse(jsonstr)
-                // 判断购物车中有没有要存入的商品
-                let pObj = arr.find(v => v.goods_id == goodsinfo.goods_id)
-                // 有
-                if (pObj) {
-                    pObj.pnum++
-                } else {
-                    // 没有
-                    goodsinfo.pnum = 1;
-                    arr.push(goodsinfo)
-                }
-                localStorage.setItem('cart', JSON.stringify(arr))
-            } else {
-                // 没有数据
-                goodsinfo.pnum = 1;
-                let tmpArr = [goodsinfo]
-                localStorage.setItem('cart', JSON.stringify(tmpArr))
-            }
+  <!-- nav -->
+  <div class="nav clean">
+    <div class="logo fl">
+      <a href="./index.html" class="mi-logo"></a>
+    </div>
+    <ul class="fl nav_top">
+      <!-- <li><a href="javascript:;"></a></li> -->
+      <li><a href="javascript:;">小米手机</a></li>
+      <li><a href="javascript:;">Redmi红米</a></li>
+      <li><a href="javascript:;">电视</a></li>
+      <li><a href="javascript:;">笔记本</a></li>
+      <li><a href="javascript:;">家电</a></li>
+      <li><a href="javascript:;">路由器</a></li>
+      <li><a href="javascript:;">智能硬件</a></li>
+      <li><a href="javascript:;">服务</a></li>
+      <li><a href="javascript:;">社区</a></li>
+    </ul>
 
-        })
-    
-        // 一个接收nav_box内容的数组
-let navboxList = []
-$('.nav_top >li')
-  .on({
-    mouseenter: () => $('.nav_box').stop().slideDown(),
-    mouseleave: () => $('.nav_box').stop().slideUp()
-  })
-  .on('mouseover', function () {
-    let index = $(this).index()
-    $.ajax({
-      url: '../lib/nav_top.json',
-      dataType: 'json',
-      success: function (res) {
-        let list = res[index].list
-        let str = ''
-        list.forEach(item => {
-          str += `
-        <li data-id="${item.goods_id}">
-          <div>
-            <img
-              src="${item.pc_img}"
-              alt="">
-          </div>
-          <p>${item.goods_name}</p>
-          <p>${item.goods_price}</p>
-        </li>
-        `
-        });
-        $('.nav_box > ul').html(str)
-        navboxList = list
-      }
-    })
-  })
-$('.nav_box').on({
-  mouseover: function () {
-    $(this).finish().show()
-  },
-  mouseout: function () {
-    $(this).finish().slideUp()
-  }
-})
+    <div class="search fr">
+      <div class="keyword">
+        <a href="javascript:;">小米9 Pro 5G</a>
+        <a href="javascript:;">Redmi Note 8</a>
+      </div>
+      <input type="text" class="txt fl">
+      <button class="search_btn fl"><i class="iconfont icon-sousuo"></i></button>
+    </div>
 
+    <!--.nav_box -->
+    <div class="nav_box">
+      <ul>
+      </ul>
+    </div>
+  </div>
+  <div class="detail container clean">
+    <div class="small fl">
+      <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1581493807.88134635.jpg" alt="">
+    </div>
+    <div class="info fl">
+      <h2>小米10</h2>
+      <p>骁龙865处理器</p>
+      <p class="txt">小米自营</p>
+      <p class="price"><span>5999</span>元</p>
+      <button id="addCart" data-id="">加入购物车</button>
+    </div>
+  </div>
 
-// nav_box跳转详情页
-$('.nav_box > ul').on('click', 'li', function () {
-  console.log($(this).html())
-  console.log($(this).data('id'))
-  console.log(navboxList)
-  let pid = $(this).data('id')
-  let data = {}
-  for (let i = 0; i < navboxList.length; i++) {
-    if (navboxList[i].goods_id == pid) {
-      data = navboxList[i]
-      break;
-    }
-  }
-  localStorage.setItem('goods_info', JSON.stringify(data))
-  location.href = `./detail.html`
-})
-    
-    </script>
+  <div class="footer">
+    <div class="footerWrap">
+      <div class="footer_t  container">
+        <ul>
+          <li><a href="">
+            <i class="iconfont icon-buoumaotubiao46"></i>
+            预约维修服务</a></li>
+        <li><a href="">
+            <i class="iconfont icon-qitianwuliyoutuihuan"></i>
+            7天无理由退货</a></li>
+        <li><a href="">
+            <i class="iconfont icon-15tianwuliyoutuihuo"></i>
+            15天免费换货</a></li>
+        <li><a href="">
+            <i class="iconfont icon-iconfront-"></i>
+            满99元包邮</a></li>
+        <li><a href="">
+            <i class="iconfont icon-ditu"></i>
+            520余家售后网点</a></li>
+        </ul>
+      </div>
+      <div class="footer_link container clean">
+        <dl>
+          <dt><a href="">帮助中心</a></dt>
+          <dd><a href="">账户管理</a></dd>
+          <dd><a href="">购物指南</a></dd>
+          <dd><a href="">订单操作</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="">服务支持</a></dt>
+          <dd><a href="">售后政策</a></dd>
+          <dd><a href="">自动服务</a></dd>
+          <dd><a href="">相关下载</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="">线下门店</a></dt>
+          <dd><a href="">小米之家</a></dd>
+          <dd><a href="">服务网点</a></dd>
+          <dd><a href="">授权体验店</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="">关于小米</a></dt>
+          <dd><a href="">加入小米</a></dd>
+          <dd><a href="">了解小米</a></dd>
+          <dd><a href="">投资者关系</a></dd>
+          <dd><a href="">廉洁举报</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="">关于我们</a></dt>
+          <dd><a href="">新浪微博</a></dd>
+          <dd><a href="">官网微信</a></dd>
+          <dd><a href="">联系我们</a></dd>
+        </dl>
+        <dl>
+          <dt><a href="">特色服务</a></dt>
+          <dd><a href="">F码通道</a></dd>
+          <dd><a href="">礼物码</a></dd>
+          <dd><a href="">防伪查询</a></dd>
+        </dl>
+
+        <div class="contact fr">
+          <p class="phonenum">
+            400-100-5678
+          </p>
+          <p>
+            周一至周日 8:00 - 18:00<br>
+            (仅收市话费)
+          </p>
+          <a href="javascript:;">
+            <i class="iconfont icon-conversation_icon"></i>
+            人工客服</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer_b  container">
+      <div class="logo"></div>
+      <div class="infotext">
+        <ul>
+          <li>小米商城</li><span>|</span>
+          <li>MIUI</li><span>|</span>
+          <li>米家</li><span>|</span>
+          <li>米聊</li><span>|</span>
+          <li>多看</li><span>|</span>
+          <li>游戏</li><span>|</span>
+          <li>政企服务</li><span>|</span>
+          <li>小米天猫店</li><span>|</span>
+          <li>小米集团隐私政策</li><span>|</span>
+          <li>小米公司儿童信息保护规则</li><span>|</span>
+          <li>小米商城隐私政策</li><span>|</span>
+          <li>小米商城用户协议</li><span>|</span>
+          <li>问题反馈</li><span>|</span>
+          <li>Select Location</li>
+        </ul>
+
+        <p>
+          &copy;
+          <a href="javascript:;">mi.com</a> 京ICP证110507号
+          <a href="javascript:;">京ICP备10046444号</a> <a href="javascript:;">京公网安备11010802020134号</a> <a
+            href="javascript:;">京网文[2020]0276-042号</a> <br> <a href="javascript:;">（京）网械平台备字（2018）第00005号</a> <a
+            href="javascript:;"">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a> <a href=" javascript:;">营业执照</a> <a
+            href="javascript:;">医疗器械质量公告</a> <br> <a
+            href="javascript:;">增值电信业务许可证</a>&nbsp;网络食品经营备案（京）【2018】WLSPJYBAHF-12&nbsp;
+          <a href="javascript:;">食品经营许可证</a> <br>
+          违法和不良信息举报电话：185-0130-1238&nbsp;<a href="javascript:;">知识产权侵权投诉</a>&nbsp;本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+        </p>
+      </div>
+      <div class="infolink clean">
+        <img src="https://i1.mifile.cn/f/i/17/site/truste.png" alt="">
+        <img src="https://s01.mifile.cn/i/v-logo-2.png" alt="">
+        <img src="https://s01.mifile.cn/i/v-logo-1.png" alt="">
+        <img src="https://i8.mifile.cn/b2c-mimall-media/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script src="../lib/jquery/dist/jquery.min.js"></script>
+  <script src="../lib/jqueryhome/js/zoomsl.min.js"></script>
+  <script src="../js/detail.js"></script>
+  <script src="../js/smallCart.js"></script>
 </body>
 
 </html>

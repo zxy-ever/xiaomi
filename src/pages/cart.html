@@ -31,281 +31,60 @@
             <div class="already">
                 <a href="javascript:;" class="username fl">用户名用户名用户名用户名</a>
                 <span class="fl">|</span>
-                <a href="../pages/login.html" class="fl">退出</a>
+                <a href="../pages/login.html" class="exit" class="fl">退出</a>
             </div>
         </div>
     </div>
-    <!-- 购物车 -->
-    <div class="cart container">
-        <!-- 购物车头部 -->
-        <div class="cart_head clean">
-            <div class="cart-check fl">
-                <input type="checkbox" class="checkAll">全选
-            </div>
-            <div class="cart-img fl">&nbsp;</div>
-            <div class="cart-name fl">商品名称</div>
-            <div class="cart-price fl">单价</div>
-            <div class="cart-num fl">数量</div>
-            <div class="cart-total fl">小计</div>
-            <div class="cart-action fl">操作</div>
-        </div>
-        <!-- 购物车列表 -->
-        <div class="cart_list">
-            <div class="cart_box clean">
-                <div class="cart-check fl">
-                    <input type="checkbox" class="checkSingle">
-                </div>
-                <div class="cart-img fl">
-                    <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1566204458.98572409.jpg?thumb=1&w=80&h=80"
-                        alt="">
-                </div>
-                <div class="cart-name fl">米家运动鞋3 男款 深黑色 39</div>
-                <div class="cart-price fl">
-                    <i class="price">169</i>
-                    元</div>
-                <div class="cart-num fl">
-                    <input type="button" class="subBtn fl" value="-">
-                    <input type="text" class="num fl" value="1">
-                    <input type="button" class="addBtn fl" value="+">
-                </div>
-                <div class="cart-total fl">
-                    <i class="total">169</i>
-                    元</div>
-                <div class="cart-action fl">
-                    <input type="button" class="delBtn" value="×">
-                </div>
-            </div>
-            <div class="cart_box clean">
-                <div class="cart-check fl">
-                    <input type="checkbox" class="checkSingle">
-                </div>
-                <div class="cart-img fl">
-                    <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1566204458.98572409.jpg?thumb=1&w=80&h=80"
-                        alt="">
-                </div>
-                <div class="cart-name fl">米家运动鞋3 男款 深黑色 39</div>
-                <div class="cart-price fl">
-                    <i class="price">169</i>
-                    元</div>
-                <div class="cart-num fl">
-                    <input type="button" class="subBtn fl" value="-">
-                    <input type="text" class="num fl" value="1">
-                    <input type="button" class="subBtn fl" value="+">
-                </div>
-                <div class="cart-total fl">
-                    <i class="total">169</i>
-                    元</div>
-                <div class="cart-action fl">
-                    <input type="button" class="delBtn" value="×">
-                </div>
-            </div>
-            <div class="cart_box clean">
-                <div class="cart-check fl">
-                    <input type="checkbox" class="checkSingle">
-                </div>
-                <div class="cart-img fl">
-                    <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-shopapi-pms/pms_1566204458.98572409.jpg?thumb=1&w=80&h=80"
-                        alt="">
-                </div>
-                <div class="cart-name fl">米家运动鞋3 男款 深黑色 39</div>
-                <div class="cart-price fl">
-                    <i class="price">169</i>
-                    元</div>
-                <div class="cart-num fl">
-                    <input type="button" class="subBtn fl" value="-">
-                    <input type="text" class="num fl" value="1">
-                    <input type="button" class="subBtn fl" value="+">
-                </div>
-                <div class="cart-total fl">
-                    <i class="total">169</i>
-                    元</div>
-                <div class="cart-action fl">
-                    <input type="button" class="delBtn" value="×">
-                </div>
-            </div>
-        </div>
+    <!-- 购物车为空时 -->
+    <div class="empty container">
+        <h2>您的购物车还是空的!</h2>
+        <a href="./login.html" class="loginBtn">立即登录</a>
+        <a href="./list.html" class="listBtn">马上去购物</a>
     </div>
+    <!-- 购物车不为空时 -->
+    <div class="cartList" style="display: none;">
+        <!-- 购物车 -->
+        <div class="cart container">
+            <div class="cart_head clean">
+                <div class="cart-check fl">
+                    <input type="checkbox" class="checkAll">全选
+                </div>
+                <div class="cart-img fl">&nbsp;</div>
+                <div class="cart-name fl">商品名称</div>
+                <div class="cart-price fl">单价</div>
+                <div class="cart-num fl">数量</div>
+                <div class="cart-total fl">小计</div>
+                <div class="cart-action fl">操作</div>
+            </div>
+            <!-- 购物车列表 -->
+            <div class="cart_list">
 
-    <div class="cart_account container">
-        <div class="account_l fl">
-            <a href="../pages/list.html">继续购物</a>
-            <span>|</span>
-            <span>共
-                <i class="cartNum">2</i>
-                件商品,已选择
-                <i class="selNum">0</i>
-                件
-            </span>
+            </div>
         </div>
-        <div class="account_r fr">
-            <span>合计：
-                <i class="totalPrice">0</i>
-                元
-            </span>
-            <a href="">去结算</a>
+        <div class="cart_account container">
+            <div class="account_l fl">
+                <a href="../pages/list.html">继续购物</a>
+                <span>|</span>
+                <span>共
+                    <i class="cartNum">2</i>
+                    件商品,已选择
+                    <i class="selNum">0</i>
+                    件
+                </span>
+            </div>
+            <div class="account_r fr">
+                <span>合计：
+                    <i class="totalPrice">0</i>
+                    元
+                </span>
+                <button class="pay fr" disabled="disabled">去结算</button>
+            </div>
         </div>
     </div>
 
     <script src="../lib/jquery/dist/jquery.min.js"></script>
-    <script>
-        // 判断用户是否登录
-        let token = localStorage.getItem('token')
-        let username = localStorage.getItem('username')
-        if (token) {
-            $('.already').css('display', 'block')
-            $('.login').css('display', 'none')
-            $('.already .username').html(username)
-        } else {
-            $('.already').css('display', 'noen')
-            $('.login').css('display', 'block')
-        }
+    <script src="../js/cart.js"></script>
 
-
-        // 获取购物车列表
-        getList()
-        function getList() {
-            let jsonstr = localStorage.getItem('cart')
-            if (jsonstr) {
-                let cartList = JSON.parse(jsonstr)
-                let str = ''
-                cartList.forEach(item => {
-                    str += `
-                    <div class="cart_box clean">
-                        <div class="cart-check fl">
-                            <input type="checkbox" class="checkSingle">
-                        </div>
-                        <div class="cart-img fl">
-                            <img src="${item.pc_img}"
-                                alt="">
-                        </div>
-                        <div class="cart-name fl">${item.goods_name}</div>
-                        <div class="cart-price fl">
-                            <i class="price">${item.goods_price}</i>
-                            元</div>
-                        <div class="cart-num fl">
-                            <input type="button" onclick="subClick(this,${item.goods_id})" class="subBtn fl" value="-">
-                            <input type="text" class="num fl" value="${item.pnum}">
-                            <input type="button" onclick="addClick(this,${item.goods_id})" class="addBtn fl" value="+">
-                        </div>
-                        <div class="cart-total fl">
-                            <i class="total"></i>
-                            元</div>
-                        <div class="cart-action fl">
-                            <input type="button" class="delBtn" value="×">
-                        </div>
-                    </div>
-                    `
-                })
-                $('.cart_list').html(str)
-            }
-        }
-        // 全选 单选按钮
-        $('.checkAll').click(function () {
-            let isChecked = $(this).prop('checked');
-            $('.checkSingle').prop('checked', isChecked)
-
-            // 已选总件数,总金额
-            getCount()
-
-        })
-
-        // 单选框按钮
-        $('.cart_list').on('click','.checkSingle',function(){
-            let isAllChecked = true
-            $('.checkSingle').each(function (i, v) {
-                if (!v.checked) {
-                    isAllChecked = false
-                }
-            })
-            $('.checkAll').prop('checked', isAllChecked)
-
-            // 已选总件数,总金额
-            getCount()
-        })
-        // 计算购物车总件数
-        getTotalNum()
-        function getTotalNum() {
-            let jsonstr = localStorage.getItem('cart')
-            let tmpArr = JSON.parse(jsonstr)
-            let num = 0;
-            tmpArr.forEach(v => {
-                num += v.pnum
-            })
-            $('.cartNum').html(num)
-        }
-
-        // 计算小计 
-        subTotal()
-        function subTotal(){
-            $('.total').each((i, v) => {
-                let num = Number($(v).parent().siblings('.cart-num').children('.num').val())
-                let price = Number($(v).parent().siblings('.cart-price').children('.price').html())
-                $(v).html(num * price)
-            })
-        }    
-
-        getCount()
-        // 计算购物车选择总件数,总金额
-        function getCount() {
-            let selnum = 0;
-            let count = 0;
-            $('.checkSingle').each((i, v) => {
-                if ($(v).prop('checked')) {
-                    let num = Number($(v).parent().siblings('.cart-num').children('.num').val())
-                    let price = Number($(v).parent().siblings('.cart-price').children('.price').html())
-                    selnum += num
-                    console.log(price)
-                    count += num * price
-                    console.log(count)
-                }
-            })
-            console.log(selnum)
-            $('.selNum').html(selnum)
-            // 总价
-            $('.totalPrice').html(count)
-        }
-
-
-        // 增加按钮
-        function addClick(btn,id){
-            console.log(btn)
-            console.log(id)
-            let cartList = JSON.parse(localStorage.getItem('cart'))
-            console.log(cartList)
-            let obj = cartList.find(v=>v.goods_id == id)
-            console.log(obj)
-            obj.pnum++
-            console.log($(btn).prev())
-            $(btn).prev().val(obj.pnum)
-            console.log(obj.pnum)
-            console.log(cartList)
-            localStorage.setItem('cart',JSON.stringify(cartList))
-            getCount()  //总件数,总金额
-            subTotal()  //小计
-            getTotalNum() //购物车总数量
-        }
-
-        // 减少按钮
-        function subClick(btn,id){
-            console.log(btn)
-            console.log(id)
-            let cartList = JSON.parse(localStorage.getItem('cart'))
-            console.log(cartList)
-            let obj = cartList.find(v=>v.goods_id == id)
-            console.log(obj)
-            if(obj.pnum == 1){
-                return;
-            }
-            obj.pnum--
-            $(btn).next().val(obj.pnum)
-            console.log(obj.pnum)
-            console.log(cartList)
-            localStorage.setItem('cart',JSON.stringify(cartList))
-            getCount()  
-            subTotal()
-            getTotalNum()
-        }
-    </script>
 </body>
 
 </html>

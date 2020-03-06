@@ -68,6 +68,23 @@
   border: 0;
   margin-top: 25px;
 }
+.banner .login .ipt .errInfo {
+  display: none;
+  padding-top: 10px;
+}
+.banner .login .ipt .errInfo .err-icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url("https://account.xiaomi.com/static/res/f234829/account-static/respassport/acc-2014/img/sprite_login.gif") no-repeat;
+  background-position: 0 -69px;
+  vertical-align: middle;
+}
+.banner .login .ipt .errInfo span {
+  font-size: 14px;
+  color: #f56600;
+  vertical-align: middle;
+}
 .banner .login .reg {
   padding: 10px 30px 130px;
 }
@@ -168,6 +185,7 @@
   color: #333333;
 }
 .footer p {
+  font-size: 14px;
   text-align: center;
   color: #757575;
   padding-bottom: 20px;
