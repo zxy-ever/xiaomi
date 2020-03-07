@@ -1,4 +1,4 @@
-    // 一个接收nav_box内容的数组
+// 一个接收nav_box内容的数组
 let navboxList = []
 $('.nav_top >li')
   .on({
